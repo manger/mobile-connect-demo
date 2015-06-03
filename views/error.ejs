@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<% include _head.ejs %>
+
+<body>
+<div class="container">
+    <% include _nav.ejs %>
+
+    <div class="jumbotron">
+        <h1><%= message %></h1>
+        <h2><%= error.status %></h2>
+        <pre><%= error.stack %></pre>
+    </div>
+</div>
+</body>
+</html>

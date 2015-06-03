@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<% include _head.ejs %>
+
+<body>
+<div class="container">
+    <script type="application/javascript" src="mobileconnect/DiscoverySDK.js"></script>
+    <script type="application/javascript" src="mobileconnect/LogoSDK.js"></script>
+    <script type="application/javascript" src="mobileconnect/Base64Utils.js"></script>
+    <script type="application/javascript" src="mobileconnect/OpenIdConnectSDK.js"></script>
+    <script type="application/javascript" src="js/mobileconnect_logo.js"></script>
+    <script type="application/javascript" src="js/mobileconnect_discovery.js"></script>
+
+    <% include _nav.ejs %>
+
+    <div class="panel providers">
+        <h2>How would you like to sign in?</h2>
+        <small>OpenID sign in screens may open in a new window. Please ensure you allow popups from this page.</small><br/>
+        <br/>
+        <a class="btn-mobileconnect" name="loginButton" id="loginButton" onClick="startActiveDiscovery(); return false;" disabled="disabled" href='#'></a><br/>
+        <a class="btn-auth btn-yahoo large" href="/openidconnect">Sign in with <b>Telstra Connect</b></a><br/>
+        <a class="btn-auth large btn-google" href="#">Sign in with <b>Google+</b></a><br/>
+        <a class="btn-auth large btn-facebook" href="#">Sign in with <b>Facebook</b></a><br/>
+        <a class="btn-auth large btn-twitter" href="#">Sign in with <b>Twitter</b></a>
+
+    </div>
+</div>
+
+<script type="application/javascript">
+    getLogos();
+</script>
+
+</body>
+</html>

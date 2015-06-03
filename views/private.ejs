@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<% include _head.ejs %>
+
+<body>
+<div class="container">
+  <% include _nav.ejs %>
+
+  <div class="content">
+  <div>
+    <h1>Account details</h1>
+    <p>Hello <%= user.name %>,</p>
+    <p>Your email is <%= user.email %></p>
+    <p>Your phone number is <%= user.phone ? user.phone : 'unknown'%></p>
+  </div>
+
+  <div>
+    <table class="table table-bordered table-striped">
+      <caption>Accounts</caption>
+      <tr>
+        <th>Account</th>
+        <th>Balance</th>
+      </tr>
+      <tr>
+        <th>123456</th>
+        <th>$<%= (Math.random() * 100000.0).toFixed(2) %></th>
+      </tr>
+      <tr>
+        <th>123457</th>
+        <th>$<%= (Math.random() * 100000.0).toFixed(2) %></th>
+      </tr>
+      <tr>
+        <th>123458</th>
+        <th>$<%= (Math.random() * 100000.0).toFixed(2) %></th>
+      </tr>
+      <tr>
+        <th>1234508</th>
+        <th>$<%= (Math.random() * 100000.0).toFixed(2) %></th>
+      </tr>
+      <tr>
+        <th>123412488</th>
+        <th>$<%= (Math.random() * 100000.0).toFixed(2) %></th>
+      </tr>
+    </table>
+  </div>
+    </div>
+</div>
+</body>
+</html>
