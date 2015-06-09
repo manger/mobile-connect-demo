@@ -16,11 +16,7 @@ router.get('/mobileconnect', function(req, res) {
 
 // handle the callback from the identity provider - route to either Connect or Mobile Connect
 router.get('/auth', function(req, res) {
-    if(req.query.scope === config.mobileConnect.oauthScope) {
-        authCallback(req, res);
-    } else {
-        res.status(400).send({ error:"no valid scope specified" });
-    }
+    authCallback(req, res);
 });
 
 var authCallback = function(originalRequest, originalResponse) {

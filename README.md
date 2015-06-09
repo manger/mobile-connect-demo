@@ -24,7 +24,7 @@ MC_EXCHANGE_SECRET - Exchange API secret for Mobile Connect
 
 MC_API_KEY - Telstra Mobile Connect API secret
 
-MC_REDIRECT_URII - Redirect URI specified during signup for Telstra Mobile Connect API
+MC_REDIRECT_URI - Redirect URI specified during signup for Telstra Mobile Connect API
 
 MC_OAUTH_SCOPE - OAuth scope used for Telstra Connect API, will always be 'openid'
 

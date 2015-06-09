@@ -13,11 +13,7 @@ router.get('/openidconnect', function(req, res) {
 
 // handle the callback from the identity provider - route to either Connect or Mobile Connect
 router.get('/connect_auth', function(req, res) {
-    if(req.query.scope == config.connect.oauthScope) {
-        authCallback(req, res);
-    } else {
-        res.status(400).send({ error:"no valid scope specified" });
-    }
+    authCallback(req, res);
 });
 
 var authCallback = function(originalRequest, originalResponse) {
