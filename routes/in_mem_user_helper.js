@@ -6,13 +6,13 @@ module.exports = (function() {
 
     var promiseToFindOrCreateUser = function(id) {
         return Q.promise(function(resolve, reject) {
-            var data = users[id];
-            if(data.exists()) {
-                resolve(data);
-            } else {
-                var profile = { id:id };
-                users[id] = profile;
+            var profile = users[id];
+            if(profile) {
                 resolve(profile);
+            } else {
+                var newProfile = { id:id };
+                users[id] = newProfile;
+                resolve(newProfile);
             }
         });
     };
