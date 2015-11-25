@@ -465,12 +465,12 @@ img.google {
 
 .btn-yahoo:before {
     margin: 0 0.6em 0 -0.6em;
-    background: url(http://i.imgur.com/bZyXoKB.png) no-repeat;
+    background: url(https://i.imgur.com/bZyXoKB.png) no-repeat;
 
 }
 
 .btn-yahoo.large:before {
-    background: url(http://i.imgur.com/bZyXoKB.png) no-repeat;
+    background: url(https://i.imgur.com/bZyXoKB.png) no-repeat;
     background-size: 32px;
     margin: 0 0.6em 0 -0.6em;
 }
