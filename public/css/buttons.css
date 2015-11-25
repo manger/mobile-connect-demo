@@ -55,33 +55,6 @@ img.google {
     margin-right: 10px;
 }
 
-.btn-mobileconnect {
-    display: inline-block;
-    width: 26rem;
-    text-decoration: none;
-    background-color: antiquewhite;
-    text-align: center;
-    padding-top: 0.5rem;
-    padding-bottom: 0.75rem;
-    border: solid 1px #637bad;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
-    color: #fcf4f4;
-    -webkit-box-shadow: 0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;
-    -moz-box-shadow: 0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;
-    box-shadow: 0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;
-    margin: 4px;
-}
-
-.btn-mobileconnect img {
-    height: 48px;
-    margin-right: 10px;
-}
-
-.btn-mobileconnect:hover {
-    background-color: #f0e0c7;
-}
 
 /**
  * Button Object
@@ -431,11 +404,11 @@ img.google {
 }
 
 
-/* Yahoo!
+/* Telstra
    ========================================================================== */
 
-.btn-yahoo,
-.btn-yahoo:visited {
+.btn-telstra,
+.btn-telstra:visited {
     color: white;
     border-color: #075;
     background: #2a7;
@@ -447,12 +420,12 @@ img.google {
     background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
 }
 
-.btn-yahoo:hover,
-.btn-yahoo:focus {
+.btn-telstra:hover,
+.btn-telstra:focus {
     background: #3b8;
 }
 
-.btn-yahoo:active {
+.btn-telstra:active {
     border-color: #f09700;
     background-image: none;
     -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.3);
@@ -463,14 +436,108 @@ img.google {
  * Icon
  */
 
-.btn-yahoo:before {
+.btn-telstra:before {
     margin: 0 0.6em 0 -0.6em;
-    background: url(http://i.imgur.com/bZyXoKB.png) no-repeat;
+    background: url(t.120x140.png) no-repeat;
 
 }
 
-.btn-yahoo.large:before {
-    background: url(http://i.imgur.com/bZyXoKB.png) no-repeat;
+.btn-telstra.large:before {
+    background: url(t.120x140.png) no-repeat;
     background-size: 32px;
     margin: 0 0.6em 0 -0.6em;
+}
+ 
+
+/* Mobile Connect
+   ========================================================================== */
+
+.btn-mobileconnect,
+.btn-mobileconnect:visited {
+    color: #fcf4f4;
+    border-color: #637bad;
+    background: antiquewhite;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#7D7597), to(#6D6586));
+    background-image: -webkit-linear-gradient(#7D7597, #6D6586);
+    background-image: -moz-linear-gradient(#7D7597, #6D6586);
+    background-image: -ms-linear-gradient(#7D7597, #6D6586);
+    background-image: -o-linear-gradient(#7D7597, #6D6586);
+    background-image: linear-gradient(#7D7597, #6D6586);
+}
+
+.btn-mobileconnect:hover,
+.btn-mobileconnect:focus {
+    background: #f0e0c7;
+}
+
+.btn-mobileconnect:active {
+    border-color: #f09700;
+    background-image: none;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+/*
+ * Icon
+ */
+
+.btn-mobileconnect:before {
+    margin: 0 0.6em 0 -0.6em;
+    background: url(mc.36x36.png) no-repeat;
+
+}
+
+.btn-mobileconnect.large:before {
+    background: url(mc.36x36.png) no-repeat;
+    background-size: 36px;
+    margin: 0 1em 0 -1em;
+}
+
+
+/* Google
+   ========================================================================== */
+
+.btn-google,
+.btn-google:visited {
+    border-color: #3079ed;
+    color: #fff;
+    background: #4787ed;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#4d90fe), to(#4787ed));
+    background-image: -webkit-linear-gradient(#4d90fe, #4787ed);
+    background-image: -moz-linear-gradient(#4d90fe, #4787ed);
+    background-image: -ms-linear-gradient(#4d90fe, #4787ed);
+    background-image: -o-linear-gradient(#4d90fe, #4787ed);
+    background-image: linear-gradient(#4d90fe, #4787ed);
+}
+
+.btn-google:hover,
+.btn-google:focus,
+.btn-google:active {
+    color: #fff;
+    background-color: #357ae8;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#4d90fe), to(#357ae8));
+    background-image: -webkit-linear-gradient(#4d90fe, #357ae8);
+    background-image: -moz-linear-gradient(#4d90fe, #357ae8);
+    background-image: -ms-linear-gradient(#4d90fe, #357ae8);
+    background-image: -o-linear-gradient(#4d90fe, #357ae8);
+    background-image: linear-gradient(#4d90fe, #357ae8);
+}
+
+.btn-google:active {
+    -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/*
+ * Icon
+ */
+
+.btn-google:before {
+    margin: 0 1em 0 -1em;
+    background-position: -88px 0;
+    background-color: #e6e6e6;
+}
+
+.btn-google.large:before {
+    background-position: -144px -22px;
 }
