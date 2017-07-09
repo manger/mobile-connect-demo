@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Social Login</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css" />
+    <link href='//fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Overlock:900' rel='stylesheet' type='text/css'>
+    <link href='css/style.css' rel='stylesheet' type='text/css' />
+    <link href='css/buttons.css' rel='stylesheet' type='text/css' />
+
+    <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+<div class="container">
+    <script type="application/javascript" src="mobileconnect/DiscoverySDK.js"></script>
+    <script type="application/javascript" src="mobileconnect/LogoSDK.js"></script>
+    <script type="application/javascript" src="mobileconnect/Base64Utils.js"></script>
+    <script type="application/javascript" src="mobileconnect/OpenIdConnectSDK.js"></script>
+    <script type="application/javascript" src="js/mobileconnect_logo.js"></script>
+    <script type="application/javascript" src="js/mobileconnect_discovery.js"></script>
+
+    <nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Secure Bank</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/private">My Accounts</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                
+                <li><a href="/login">Sign in</a></li>
+                
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div><!--/.container-fluid -->
+</nav>
+
+    <div class="panel providers">
+        <h2>How would you like to sign in?</h2>
+        <small>OpenID sign in screens may open in a new window. Please ensure you allow popups from this page.</small><br/>
+        <br/>
+        <a class="btn-auth large btn-mobileconnect" name="loginButton" id="loginButton" onClick="startActiveDiscovery(); return false;" disabled="disabled" href='#'>Sign in with <b>Mobile Connect</b></a><br/>
+        <a class="btn-auth large btn-telstra" href="/openidconnect">Sign in with <b>Telstra Connect</b></a><br/>
+        <a class="btn-auth large btn-google" href="#" onClick="alert('Not implemented in this demonstration');">Sign in with <b>Google+</b></a><br/>
+        <a class="btn-auth large btn-facebook" href="#" onClick="alert('Not implemented in this demonstration');">Sign in with <b>Facebook</b></a><br/>
+        <a class="btn-auth large btn-twitter" href="#" onClick="alert('Not implemented in this demonstration');">Sign in with <b>Twitter</b></a>
+
+    </div>
+</div>
+
+</body>
+</html>
